@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Abdalah Hamwi - Software Engineer |PYTHON Developer </title>
+    <meta name="title" content="Abdalah Hamwi- Software Engineer |PYTHON Developer">
+    <meta name="description" content="Software Engineer and PYTHON Developer specializing in PYTHON, Django and modern web technologies. Building scalable applications with clean architecture and performance optimization.">
+    <meta name="keywords" content="Software Engineer, .PYTHON Developer, PYTHON, Django, Web API, Microservices, Portfolio, Back-End Developer">
+    <meta name="author" content="Abdalah Hamwi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abdalahhamwi.github.io/A-Hamwi/Portfolio/">
+    <meta property="og:title" content="Abdalah Hamwi - Software Engineer |PYTHON Developer">
+    <meta property="og:description" content="Software Engineer and .PYTHON Developer specializing in PYTHON, Django , and modern web technologies.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/135973680?s=400&u=72a12d0ad87fad51dc9122a5cb95efb5adda04bd&v=4">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/9418/9418231.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn-icons-png.flaticon.com/512/9418/9418231.png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/9418/9418231.png">
+
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#3b95f6',
+                            dark: '#258feb'
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.3s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateY(20px)'
+                            },
+
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateY(0)'
+                            }
+                        },
+                        slideUp: {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateY(30px)'
+                            },
+
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateY(0)'
+                            }
+                        },
+                        scaleIn: {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'scale(0.9)'
+                            },
+
+                            '100%': {
+                                opacity: '1',
+                                transform: 'scale(1)'
+                            }
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 transition-bg text-gray-800 dark:text-gray-200 font-sans antialiased">
+    <!-- ===== SKIP TO MAIN CONTENT ===== -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md z-50">
+            Skip to main content
+        </a>
+
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm" role="banner">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Brand/Logo -->
+                <a href="#home" class="text-2xl font-bold text-primary dark:text-primary-dark">
+                    <span class="animate-fade-in">Abdalah Hamwi</span>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Home</a>
+                    <a href="#about" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">About</a>
+                    <a href="#skills" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Skills</a>
+                    <a href="#projects" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Projects</a>
+                    <a href="#experience" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Experience</a>
+                    <a href="#education" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Education</a>
+                    <a href="#contact" class="nav-link font-bold hover:text-primary dark:hover:text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary dark:after:bg-primary-dark after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full focus:outline-none transition-all duration-300 hover:scale-110" aria-label="Toggle dark mode" aria-describedby="theme-toggle-desc">
+                    <!-- Sun Icon - Shows in Dark Mode -->
+                    <i class="fas fa-sun text-yellow-500 text-xl dark:block hidden" aria-hidden="true"></i>
+                    <!-- Moon Icon - Shows in Light Mode -->
+                    <i class="fas fa-moon text-blue-400 text-xl block dark:hidden" aria-hidden="true"></i>
+                    <span id="theme-toggle-desc" class="sr-only">Switch between light and dark theme</span>
+                </button>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-full focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-gray-700 dark:text-gray-200" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Home</a>
+                <a href="#about" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">About</a>
+                <a href="#skills" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Skills</a>
+                <a href="#projects" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Projects</a>
+                <a href="#experience" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Experience</a>
+                <a href="#education" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Education</a>
+                <a href="#certificates" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Certificates</a>
+                <a href="#contact" class="block nav-link font-bold hover:text-primary dark:hover:text-primary-dark">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <main id="main-content" class="min-h-screen">
+        <section id="home" class="min-h-screen flex items-center justify-center pt-20 hero-section relative" aria-label="Hero Section">
+            <!-- Particles Background -->
+            <div id="particles-js" class="absolute inset-0 w-full h-full"></div>
+
+            <!-- Hero Content -->
+            <div class="container mx-auto px-6 py-20 text-center relative z-10">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 hero-title">
+                        Hi, I'm <span class="neon-name">Abdalah Hamwi</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-600 dark:text-gray-300 mb-8 hero-subtitle">
+                        Software Engineer | PYTHON Developer |Back-End
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="text-lg text-gray-500 dark:text-gray-400 mb-12" style="animation: fadeInUp 1s ease-out 0.6s both;">
+                        Passionate developer with expertise in building scalable Django applications, implementing modern architectural patterns, and delivering high-quality solutions through research-driven problem-solving and continuous learning.
+                    </p>
+
+                    <!-- Call-to-Action Buttons -->
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="https://drive.google.com/file/d/1W272WvN9JqHiff2Bvp5UbXC-m9BobH16/view?usp=drive_link" target="_blank" class="px-8 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-medium transition-all transform hover:scale-105 hero-button btn-primary">
+                        View My CV
+                    </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-primary text-primary dark:text-primary-dark hover:bg-primary hover:text-white dark:hover:text-white rounded-full font-medium transition-all transform hover:scale-105 hero-button btn-primary">
+                        Contact Me
+                    </a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="mt-8" style="animation: fadeInUp 1s ease-out 1s both;">
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://www.linkedin.com/in/abdalah-hamwi" target="_blank" rel="noopener noreferrer" class="social-icon hover:scale-110 transition-all duration-300 transform" aria-label="LinkedIn Profile">
+                            <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-130-thumb.png"
+                                 alt="LinkedIn"
+                                 class="w-8 h-8">
+                        </a>
+                            <a href="https://www.github.com/abdalahhamwi" target="_blank" rel="noopener noreferrer" class="social-icon text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-300 transform" aria-label="GitHub Profile">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 about-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">About Me</span>
+                </h2>
+
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Profile Image -->
+
+                    <!-- About Content -->
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+
+                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            I'm a Software Engineer and PYTHON Developer focused on building scalable APIs and robust backends using PYTHON, Django, and modern architectural patterns. I value clean code, performance, and secure, maintainable systems.
+                        </p>
+
+                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            I enjoy collaborating in teams, applying research-driven problem solving, and continuously learning. Recently, I have optimized APIs with Django ORM, middleware, Dependency Injection, and caching to deliver measurable impact.
+                        </p>
+
+                        <!-- Contact Information -->
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-primary dark:text-primary-dark mr-2"></i>
+                                <span>Damascus, Syria</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-primary dark:text-primary-dark mr-2"></i>
+                                <a href="mailto:abdalah.hamwi@mail.ru" class="hover:text-primary dark:hover:text-primary-dark transition-colors">
+                                abdalah.hamwi@mail.ru
+                            </a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-primary dark:text-primary-dark mr-2"></i>
+                                <a href="tel:+963993051033" class="hover:text-primary dark:hover:text-primary-dark transition-colors">
+                                +963993051033
+                            </a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-linkedin text-primary dark:text-primary-dark mr-2"></i>
+                                <a href="https://www.linkedin.com/in/abdalah-hamwi" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition-colors">
+                                LinkedIn
+                            </a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-github text-primary dark:text-primary-dark mr-2"></i>
+                                <a href="https://www.github.com/abdalahhamwi" target="_blank" class="hover:text-primary dark:hover:text-primary-dark transition-colors">
+                                GitHub
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <section id="skills" class="py-20 skills-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">Technical Skills</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Backend Development -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow skill-card">
+                        <div class="flex items-center mb-4">
+                            <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                <i class="fas fa-server text-xl skill-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Backend Development</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">python</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">OOP</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Django</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">REST API</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm"> Django REST Framework</span>
+                        </div>
+                    </div>
+
+                    <!-- Database & ORM Technologies -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow skill-card">
+                        <div class="flex items-center mb-4">
+                            <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                <i class="fas fa-database text-xl skill-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Database & ORM</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">SQ Lite</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">PostgreSQL</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">My SQL
+                            </span>
+                             <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Django ORM</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow skill-card">
+                        <div class="flex items-center mb-4">
+                            <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                <i class="fas fa-users text-xl skill-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Soft Skills</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Teamwork</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Research</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Time Management</span>
+                            <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Communication Skills</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Deployment -->
+                   <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow skill-card" style="animation: 0.8s ease-out 0s 1 normal forwards running fadeInUpSimple; opacity: 1;">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                            <i class="fas fa-rocket text-xl skill-icon"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">DevOps &amp; Deployment</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Git</span>
+                        <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">GitHub</span>
+                        <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">GitHub Actions</span>
+                         <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Trello</span>
+                          <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Jira</span>
+                          <span class="px-3 py-2 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Linux</span>
+                    </div>
+                </div>
+
+                    <!-- Frontend Technologies -->
+                  
+                    </div>
+
+                    <!-- Soft Skills -->
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800 projects-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">Featured Projects</span>
+                </h2>
+
+                <!-- Projects Carousel Container -->
+                <div class="relative">
+                    <!-- Left Arrow -->
+                    <button id="prev-project" class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 z-10 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+
+                    <!-- Right Arrow -->
+                    <button id="next-project" class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 z-10 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+
+                    <!-- Carousel Track -->
+                    <div class="overflow-hidden rounded-lg">
+                        <div id="projects-track" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Talabat E-Commerce API -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow project-card max-w-2xl mx-auto">
+                                    <div class="h-48 overflow-hidden">
+                                        <img src="https://www.prismetric.com/wp-content/uploads/2023/07/ecommerce-api-integration-connecting-the-dots-and-empowering-stores.jpg" alt="Talabat E-Commerce API" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2">Talabat E-Commerce API Integration</h3>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Comprehensive API integration for Talabat's food delivery platform. Features include restaurant menu management, order processing, real-time tracking, and restaurant data management with Bearer token authentication.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mb-4">
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">C#</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">.NET</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">API Integration</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">Authentication</span>
+                                        </div>
+                                        <div class="flex space-x-4">
+                                            <a href="https://github.com/A-Hemeda/Talabat-E-Commerce" target="_blank" class="text-primary dark:text-primary-dark hover:underline flex items-center">
+                                            <i class="fab fa-github mr-2"></i> View Code
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order Management System -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow project-card max-w-2xl mx-auto">
+                                    <div class="h-48 overflow-hidden">
+                                        <img src="https://magora-systems.com/storage/blog/47xP5l24e2TFG3NKe3LTVrUndv8nk5HsPcUrZwZj.webp" alt="Order Management System" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2">Order Management System API</h3>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Full-featured .NET 8 Web API with JWT authentication, role-based authorization, and comprehensive order management. Features DTO pattern, AutoMapper, global exception handling, and Swagger documentation.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mb-4">
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">.NET 8</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">JWT</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">Entity Framework</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">AutoMapper</span>
+                                        </div>
+                                        <div class="flex space-x-4">
+                                            <a href="https://github.com/A-Hemeda/Order-Management-System" target="_blank" class="text-primary dark:text-primary-dark hover:underline flex items-center">
+                                            <i class="fab fa-github mr-2"></i> View Code
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Examination System -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow project-card max-w-2xl mx-auto">
+                                    <div class="h-48 overflow-hidden">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5612AQFi0yo_Hhp9fQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1687161968941?e=2147483647&v=beta&t=fTh6BRWsDmClVy8_bpetFp1c12G-4TLd4jS5Vy1T6nc" alt="Examination System" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2">Examination System</h3>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Comprehensive online exam management platform built with C# and .NET Framework. Features secure authentication for admin, teacher, and student roles, automatic grading, real-time results, and comprehensive reporting with SQL Server integration.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mb-4">
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">C#</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">.NET Framework</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">SQL Server</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">Role-Based Access</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">Auto-Grading</span>
+                                        </div>
+                                        <div class="flex space-x-4">
+                                            <a href="https://github.com/A-Hemeda/Examination-System" target="_blank" class="text-primary dark:text-primary-dark hover:underline flex items-center">
+                                            <i class="fab fa-github mr-2"></i> View Code
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Restaurant Website -->
+                            <div class="w-full flex-shrink-0 px-4">
+                                <div class="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow project-card max-w-2xl mx-auto">
+                                    <div class="h-48 overflow-hidden">
+                                        <img src="https://themewagon.com/wp-content/uploads/2018/10/pizza-1.jpg" alt="Restaurant Website" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2">Restaurant Website</h3>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Built a responsive restaurant website using HTML, CSS, and JavaScript. Designed interactive pages including home, menu, about, and contact sections with modern UI/UX, custom fonts, and dynamic features like image sliders and smooth scrolling.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mb-4">
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-full text-sm">HTML5</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">CSS3</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">JavaScript</span>
+                                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-primary-dark rounded-lg text-sm">Responsive Design</span>
+                                        </div>
+                                        <div class="flex space-x-4">
+                                            <a href="https://github.com/A-Hemeda/Restaurant" target="_blank" class="text-primary dark:text-primary-dark hover:underline flex items-center">
+                                            <i class="fab fa-github mr-2"></i> View Code
+                                        </a>
+                                            <a href="https://a-hemeda.github.io/Restaurant/" target="_blank" class="text-primary dark:text-primary-dark hover:underline flex items-center">
+                                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Indicators -->
+                    <div class="flex justify-center mt-8 space-x-2">
+                        <button class="project-indicator w-3 h-3 rounded-full bg-primary transition-all duration-300" data-index="0"></button>
+                        <button class="project-indicator w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600 transition-all duration-300" data-index="1"></button>
+                        <button class="project-indicator w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600 transition-all duration-300" data-index="2"></button>
+                        <button class="project-indicator w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600 transition-all duration-300" data-index="3"></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== VIEW ALL PROJECTS SECTION ===== -->
+        <section class="py-20 bg-gray-100 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-center">
+                    <a href="https://github.com/abdalahhamwi?tab=repositories" target="_blank" class="inline-block px-12 py-4 bg-primary hover:bg-primary-dark text-white rounded-full font-medium transition-all text-lg min-w-[200px] text-center">
+                    View All Projects
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EXPERIENCE SECTION ===== -->
+        <section id="experience" class="py-20 experience-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">Work Experience</span>
+                </h2>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Timeline -->
+                    <div class="space-y-8">
+                        <!-- Experience 1 -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-primary dark:bg-primary-dark border-4 border-white dark:border-gray-800 z-10 timeline-dot"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+                                    <h3 class="text-xl font-semibold">.NET Developer Intern</h3>
+                                    <span class="text-primary dark:text-primary-dark font-medium">Oct 2024 - May 2025</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Route</span>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Built scalable .NET APIs; improved performance with LINQ, middleware, and Dependency Injection.<br> Managed databases, strengthened security, and optimized caching.<br> Improved API response time by 35%, reduced DB
+                                    load by 20%, and cut request errors by 15% in testing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-primary dark:bg-primary-dark border-4 border-white dark:border-gray-800 z-10 timeline-dot"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+                                    <h3 class="text-xl font-semibold">Software Engineer</h3>
+                                    <span class="text-primary dark:text-primary-dark font-medium">Feb 2024 - Jul 2024</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Mono</span>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Developed an E‑Commerce App with clean code and a responsive frontend, and managed deployment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="timeline-item relative pl-8">
+                            <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-primary dark:bg-primary-dark border-4 border-white dark:border-gray-800 z-10 timeline-dot"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2">
+                                    <h3 class="text-xl font-semibold">Software Engineer Intern</h3>
+                                    <span class="text-primary dark:text-primary-dark font-medium">Jun 2023 - Nov 2023</span>
+                                </div>
+                                <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4">
+                                    <i class="fas fa-building mr-2"></i>
+                                    <span>Algoriza</span>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Built Weather, Booking, and Todo apps with mentorship and regular technical reviews.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCATION SECTION ===== -->
+        <section id="education" class="py-20 bg-gray-100 dark:bg-gray-800 education-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">Education</span>
+                </h2>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Education -->
+                    <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <div class="flex items-center mb-6">
+                            <div class="p-4 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-6">
+                                <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold">Software Engineering and Information Systems</h3>
+                                <p class="text-xl text-gray-600 dark:text-gray-300">Damascus University</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-gray-600 dark:text-gray-400 mb-4 text-lg">
+                            <i class="far fa-calendar-alt mr-3"></i>
+                            <span>Sep 2018 - Jun 2023</span>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-3">Activities & Achievements:</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-certificate text-primary dark:text-primary-dark mr-3"></i>
+                                    <span class="text-gray-600 dark:text-gray-300">PCAP Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CERTIFICATES SECTION ===== -->
+       
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800 contact-section">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <h2 class="text-3xl font-bold text-center mb-16">
+                    <span class="border-b-4 border-primary dark:border-primary-dark pb-2">Contact Me</span>
+                </h2>
+
+                <div class="flex justify-center">
+                    <div class="max-w-2xl">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-8">
+                            Feel free to reach out if you're looking for a developer, or have any questions.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Damascus, Syria</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:abdalah.hamwi@mail.ru" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary-dark transition-colors">abdalah.hamwi@mail.ru</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="p-3 rounded-full bg-primary/10 text-primary dark:text-primary-dark mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <a href="tel:+963993051033" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary-dark transition-colors">+963993051033</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h3 class="font-medium mb-4">Follow Me</h3>
+                            <div class="flex space-x-6">
+                                <a href="https://www.linkedin.com/in/abdalah-hamwi-15b07438b/" class="social-icon hover:scale-110 transition-all duration-300 transform">
+                                <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-130-thumb.png"
+                                     class="w-8 h-8">
+                            </a>
+                                <a href="https://github.com/abdalahhamwi" class="social-icon text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:scale-110 transition-all duration-300 transform">
+                                <i class="fab fa-github text-3xl"></i>
+                            </a>
+                                <a href="https://www.facebook.com/11hemeda" class="social-icon hover:scale-110 transition-all duration-300 transform">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/960px-Facebook_Logo_%282019%29.png"
+                                     class="w-8 h-8">
+                            </a>
+                            
+                            </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-white dark:bg-gray-900 py-8" role="contentinfo">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#home" class="text-2xl font-bold text-primary dark:text-primary-dark">Abdalah Hamwi</a>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">© 2025 Abdalah Hamwi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 p-3 bg-primary dark:bg-primary-dark text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
