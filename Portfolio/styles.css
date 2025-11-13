@@ -1,6 +1,7 @@
 /* ===== CSS CUSTOM PROPERTIES ===== */
 
 :root {
+     --primary-color:#3b95f6;
     --primary-dark: #258feb;
     --neon-blue: #00f3ff;
     --neon-purple: #8b5cf6;
