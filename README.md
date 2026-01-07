@@ -24,8 +24,6 @@ Experience: Details of my internships and professional roles.
 
 Education: Information about my studies.
 
-Certificates: Courses and certifications I’ve completed.
-
 Contact: Links to email and social media accounts.
 
 ## 🛠️ Technologies Used
