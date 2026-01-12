@@ -987,7 +987,7 @@ class ProjectsCarouselManager {
     this.track = document.getElementById("projects-track");
     this.prevButton = document.getElementById("prev-project");
     this.nextButton = document.getElementById("next-project");
-    this.indicators = document.querySelectorAll(".project-indicator");
+    // this.indicators = document.querySelectorAll(".project-indicator");
 
     if (this.track && this.prevButton && this.nextButton) {
       this.init();
