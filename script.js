@@ -163,7 +163,7 @@ class SmoothScroller {
         timeElapsed,
         startPosition,
         distance,
-        duration
+        duration,
       );
       window.scrollTo(0, run);
       if (timeElapsed < duration) requestAnimationFrame(animation);
@@ -231,7 +231,7 @@ class BackToTopManager {
         timeElapsed,
         startPosition,
         -startPosition,
-        duration
+        duration,
       );
       window.scrollTo(0, run);
       if (timeElapsed < duration) requestAnimationFrame(animation);
@@ -251,7 +251,7 @@ class BackToTopManager {
     window.addEventListener("scroll", () => this.handleScroll());
     if (elements.backToTopButton) {
       elements.backToTopButton.addEventListener("click", () =>
-        this.scrollToTop()
+        this.scrollToTop(),
       );
     }
   }
@@ -337,14 +337,14 @@ class ContactFormManager {
   showSuccessMessage() {
     this.showNotification(
       "Thank you for your message! We'll get back to you soon.",
-      "success"
+      "success",
     );
   }
 
   showErrorMessage() {
     this.showNotification(
       "An error occurred. Please try again later.",
-      "error"
+      "error",
     );
   }
 
@@ -357,8 +357,8 @@ class ContactFormManager {
       type === "success"
         ? "bg-green-500"
         : type === "error"
-        ? "bg-red-500"
-        : "bg-blue-500";
+          ? "bg-red-500"
+          : "bg-blue-500";
     notification.className += ` ${bgColor} text-white`;
 
     notification.innerHTML = `
@@ -367,8 +367,8 @@ class ContactFormManager {
                   type === "success"
                     ? "check-circle"
                     : type === "error"
-                    ? "exclamation-circle"
-                    : "info-circle"
+                      ? "exclamation-circle"
+                      : "info-circle"
                 } mr-2"></i>
                 <span>${message}</span>
             </div>
@@ -393,7 +393,7 @@ class ContactFormManager {
   bindEvents() {
     if (elements.contactForm) {
       elements.contactForm.addEventListener("submit", (e) =>
-        this.handleSubmit(e)
+        this.handleSubmit(e),
       );
     }
   }
@@ -558,7 +558,7 @@ class PortfolioApp {
       // Performance optimization for scroll events
       const optimizedScrollHandler = PerformanceOptimizer.throttle(
         () => this.backToTopManager.handleScroll(),
-        16 // ~60fps
+        16, // ~60fps
       );
 
       window.addEventListener("scroll", optimizedScrollHandler);
@@ -576,7 +576,7 @@ class PortfolioApp {
     const heroSubtitle = document.querySelector(".hero-subtitle");
     const heroButtons = document.querySelectorAll(".hero-section .flex a");
     const heroSocialLinks = document.querySelectorAll(
-      ".hero-section .social-icon"
+      ".hero-section .social-icon",
     );
 
     if (heroTitle) {
@@ -591,11 +591,14 @@ class PortfolioApp {
       button.style.opacity = "0";
       button.style.transform = "translateY(20px)";
 
-      setTimeout(() => {
-        button.style.transition = "all 0.6s ease";
-        button.style.opacity = "1";
-        button.style.transform = "translateY(0)";
-      }, 800 + index * 200);
+      setTimeout(
+        () => {
+          button.style.transition = "all 0.6s ease";
+          button.style.opacity = "1";
+          button.style.transform = "translateY(0)";
+        },
+        800 + index * 200,
+      );
     });
 
     // Animate social links with same timing as contact section
@@ -603,11 +606,14 @@ class PortfolioApp {
       link.style.opacity = "0";
       link.style.transform = "translateY(20px)";
 
-      setTimeout(() => {
-        link.style.transition = "all 0.6s ease";
-        link.style.opacity = "1";
-        link.style.transform = "translateY(0)";
-      }, 1200 + index * 150); // Appear after buttons
+      setTimeout(
+        () => {
+          link.style.transition = "all 0.6s ease";
+          link.style.opacity = "1";
+          link.style.transform = "translateY(0)";
+        },
+        1200 + index * 150,
+      ); // Appear after buttons
     });
   }
 }
@@ -719,7 +725,7 @@ class TiltEffectManager {
 
     // Observe changes to the project sections
     const projectSections = document.querySelectorAll(
-      "#projects, .projects-section"
+      "#projects, .projects-section",
     );
     projectSections.forEach((section) => {
       this.observer.observe(section, {
@@ -1030,10 +1036,10 @@ class ProjectsCarouselManager {
     const projectsSection = document.getElementById("projects");
     if (projectsSection) {
       projectsSection.addEventListener("mouseenter", () =>
-        this.pauseAutoSlide()
+        this.pauseAutoSlide(),
       );
       projectsSection.addEventListener("mouseleave", () =>
-        this.startAutoSlide()
+        this.startAutoSlide(),
       );
     }
   }
@@ -1220,10 +1226,10 @@ class CertificatesCarouselManager {
     const certificatesSection = document.getElementById("certificates");
     if (certificatesSection) {
       certificatesSection.addEventListener("mouseenter", () =>
-        this.pauseAutoSlide()
+        this.pauseAutoSlide(),
       );
       certificatesSection.addEventListener("mouseleave", () =>
-        this.startAutoSlide()
+        this.startAutoSlide(),
       );
     }
   }
@@ -1372,7 +1378,7 @@ class SocialLinksManager {
 
   setupHomeSocialLinks() {
     const homeSocialLinks = document.querySelectorAll(
-      ".hero-section .social-icon"
+      ".hero-section .social-icon",
     );
 
     homeSocialLinks.forEach((link) => {
@@ -1383,7 +1389,7 @@ class SocialLinksManager {
 
   setupContactSocialLinks() {
     const contactSocialLinks = document.querySelectorAll(
-      ".contact-section .social-icon"
+      ".contact-section .social-icon",
     );
 
     contactSocialLinks.forEach((link) => {
@@ -1508,7 +1514,7 @@ class CustomCursorManager {
 
   setupInteractiveElements() {
     const interactiveElements = document.querySelectorAll(
-      "a, button, .btn, input, textarea, .project-card, .social-link, .nav-links li, .carousel-control, .carousel-nav-button, .project-indicator, .certificate-indicator, .social-icon, .skill-card, .certificate-card, .timeline-item, .back-to-top"
+      "a, button, .btn, input, textarea, .project-card, .social-link, .nav-links li, .carousel-control, .carousel-nav-button, .project-indicator, .certificate-indicator, .social-icon, .skill-card, .certificate-card, .timeline-item, .back-to-top",
     );
 
     interactiveElements.forEach((el) => {

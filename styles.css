@@ -16,10 +16,10 @@
   --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   /* Neon Shadows */
   --neon-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
@@ -52,7 +52,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 25% 75%,
       rgba(59, 130, 246, 0.15) 0%,
       transparent 50%
@@ -322,8 +323,11 @@
 
 .neon-name {
   color: var(--primary-color);
-  text-shadow: 0 0 1px rgba(59, 130, 246, 0.3), 0 0 2px rgba(59, 130, 246, 0.2),
-    0 0 4px rgba(59, 130, 246, 0.1), 0 0 8px rgba(59, 130, 246, 0.05);
+  text-shadow:
+    0 0 1px rgba(59, 130, 246, 0.3),
+    0 0 2px rgba(59, 130, 246, 0.2),
+    0 0 4px rgba(59, 130, 246, 0.1),
+    0 0 8px rgba(59, 130, 246, 0.05);
   animation: professionalNeon 3s ease-in-out infinite;
   position: relative;
   z-index: 1;
@@ -332,20 +336,27 @@
 
 .dark .neon-name {
   color: var(--primary-color);
-  text-shadow: 0 0 1px rgba(59, 130, 246, 0.4), 0 0 2px rgba(59, 130, 246, 0.3),
-    0 0 4px rgba(59, 130, 246, 0.2), 0 0 8px rgba(59, 130, 246, 0.1);
+  text-shadow:
+    0 0 1px rgba(59, 130, 246, 0.4),
+    0 0 2px rgba(59, 130, 246, 0.3),
+    0 0 4px rgba(59, 130, 246, 0.2),
+    0 0 8px rgba(59, 130, 246, 0.1);
 }
 
 @keyframes professionalNeon {
   0%,
   100% {
-    text-shadow: 0 0 1px rgba(59, 130, 246, 0.3),
-      0 0 2px rgba(59, 130, 246, 0.2), 0 0 4px rgba(59, 130, 246, 0.1),
+    text-shadow:
+      0 0 1px rgba(59, 130, 246, 0.3),
+      0 0 2px rgba(59, 130, 246, 0.2),
+      0 0 4px rgba(59, 130, 246, 0.1),
       0 0 8px rgba(59, 130, 246, 0.05);
   }
   50% {
-    text-shadow: 0 0 2px rgba(59, 130, 246, 0.4),
-      0 0 4px rgba(59, 130, 246, 0.3), 0 0 8px rgba(59, 130, 246, 0.2),
+    text-shadow:
+      0 0 2px rgba(59, 130, 246, 0.4),
+      0 0 4px rgba(59, 130, 246, 0.3),
+      0 0 8px rgba(59, 130, 246, 0.2),
       0 0 12px rgba(59, 130, 246, 0.1);
   }
 }
@@ -357,13 +368,17 @@
 @keyframes professionalNeonDark {
   0%,
   100% {
-    text-shadow: 0 0 1px rgba(59, 130, 246, 0.4),
-      0 0 2px rgba(59, 130, 246, 0.3), 0 0 4px rgba(59, 130, 246, 0.2),
+    text-shadow:
+      0 0 1px rgba(59, 130, 246, 0.4),
+      0 0 2px rgba(59, 130, 246, 0.3),
+      0 0 4px rgba(59, 130, 246, 0.2),
       0 0 8px rgba(59, 130, 246, 0.1);
   }
   50% {
-    text-shadow: 0 0 2px rgba(59, 130, 246, 0.5),
-      0 0 4px rgba(59, 130, 246, 0.4), 0 0 8px rgba(59, 130, 246, 0.3),
+    text-shadow:
+      0 0 2px rgba(59, 130, 246, 0.5),
+      0 0 4px rgba(59, 130, 246, 0.4),
+      0 0 8px rgba(59, 130, 246, 0.3),
       0 0 12px rgba(59, 130, 246, 0.2);
   }
 }
@@ -1004,7 +1019,9 @@ header {
 .project-card:hover,
 .certificate-card:hover {
   border-color: var(--primary-color);
-  box-shadow: var(--shadow-2xl), 0 0 20px rgba(59, 130, 246, 0.1);
+  box-shadow:
+    var(--shadow-2xl),
+    0 0 20px rgba(59, 130, 246, 0.1);
 }
 
 /* ===== LOADING ANIMATIONS ===== */
@@ -1151,7 +1168,7 @@ html {
   margin: 0 auto;
 }
 
-/* Carousel navigation buttons *//*
+/* Carousel navigation buttons */ /*
 
 :root
   --
@@ -1263,14 +1280,20 @@ body.custom-cursor-active {
   width: 8px;
   height: 8px;
   background-color: var(--primary-color);
-  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .cursor-dot-outline {
   width: 40px;
   height: 40px;
   background-color: rgba(59, 149, 246, 0.2);
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease,
+  transition:
+    transform 0.3s ease,
+    width 0.3s ease,
+    height 0.3s ease,
     background-color 0.3s ease;
   z-index: 9998;
 }
@@ -1337,7 +1360,9 @@ body.custom-cursor-active {
 /* ===== TILT EFFECT STYLES ===== */
 
 .project-card {
-  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  transition:
+    transform 0.1s ease-out,
+    box-shadow 0.1s ease-out;
   transform-style: preserve-3d;
   will-change: transform, box-shadow;
 }
